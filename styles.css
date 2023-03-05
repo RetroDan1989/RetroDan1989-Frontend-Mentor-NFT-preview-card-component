@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+--Soft_blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+--Very_dark_blue_main_BG: hsl(217, 54%, 11%);
+--Very_dark_blue_card_BG: hsl(216, 50%, 16%);
+--Very_dark_blue_line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+
+--margin_down:15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very_dark_blue_main_BG);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+.card__img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: var(--margin_down);
+}
+
+.card {
+    background-color:var(--Very_dark_blue_card_BG);
+    padding: 20px;
+    border-radius: 10px;
+
+    min-width: 330px;
+    min-height: 545px;
+}
+
+.card__title {
+    color: var(--White);
+    margin-bottom: var(--margin_down);
+    font-weight: 700;
+}
+
+p {
+    color: var(--Soft_blue);
+    line-height: 25px;
+    margin-bottom: var(--margin_down);
+}
+
+.card__box {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--margin_down);
+}
+
+.card__box__price {
+
+    color: var(--Cyan);
+    font-weight: 400;
+
+}
+
+.card__box__time {
+    color: var(--Soft_blue);
+}
+
+li {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.card__line {
+    background-color: rgba(255,255,255,0.2);
+    width: 100%;
+    height: 1px;
+
+    border-radius: 50%;
+    margin-bottom: var(--margin_down);
+}
+
+.card__avatar__img {
+    width: 40px;
+    border: 1.34px solid white;
+    border-radius: 50%;
+}
+
+.card__avatar {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    letter-spacing: 0.6px;
+}
+
+.card__avatar h5 label {
+    color: var(--Soft_blue);
+}
+
+@media screen and (min-width:420px) {
+
+    .card {
+        max-width: 350px;
+        max-height: 600px;
+    }
+    
+}
+
